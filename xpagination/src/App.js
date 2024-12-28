@@ -48,7 +48,7 @@ function App() {
     )
       .then((response) => response.json())
       .then((data) => setMembers(data))
-      .catch((error) => alert("Error fetching members:", error));
+      .catch((error) => alert(`/failed to fetch data/i`));
   }, []);
 
   const totalPages = Math.ceil(members.length / itemsPerPage);
